@@ -1,0 +1,140 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Josefin Sans',sans-serif;
+  background-image: radial-gradient(ellipse farthest-corner at 80% 10%, rgba(113,173,230,1) 0%, rgba(151,223,237,1) 42%, rgba(110,235,217,1) 65%, rgba(79,218,174,1) 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  .leftContainer {
+    width: 50vw;
+    height: 100vh;
+    background: rgba(255,255,255,0.3) 0 0 no-repeat padding-box;
+    float: left;
+    .carouselContainer {
+      width: 42%;
+      height: 80vh;
+      background: rgba(255,255,255,0.7) 0 0 no-repeat padding-box;
+      border-radius: 2vh;
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      .carouselLogoContainer {
+        height: 10.61vh;
+        width: 100%;
+        .carouselLogo {
+          width: 100%;
+          height: 100%;
+          a {
+            position: absolute;
+            top: 8%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            img {
+              width: 320px;
+              height: auto;
+            }
+          }
+        }
+      }
+      .carouselSlideContainer {
+        background: #FFFFFF 0 0 no-repeat padding-box;
+        height: 54vh;
+        width: 100%;
+        display: block;
+        overflow-y: auto;
+        padding: 1rem 3rem 1rem 3rem;
+        .carouselLoading {
+          width: 100%;
+          height: 44vh;
+          opacity: .5;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .carousel {
+          .control-next.control-arrow {
+            &:hover {
+              background: none;
+            }
+            &:before {
+              border-left: 8px solid blue;
+            }
+          }
+          .control-prev.control-arrow {
+            &:hover {
+              background: none;
+            }
+            &:before {
+              border-right: 8px solid blue;
+            }
+          }
+        }
+      }
+      .carouselFooter {
+        height: 10.61vh;
+        width: 100%;
+        .carouselFooterSwissContainer {
+          width: 100%;
+          height: 100%;
+          a {
+            position: absolute;
+            bottom: 0;
+            margin-left: 1vh;
+            margin-bottom: 1vh;
+            img {
+              width: 30vh;
+            }
+          }
+        }
+      }
+    }
+    .leftContainerFooter {
+      position: fixed;
+      left: 2vh;
+      bottom: 1vh;
+      text-align: left;
+      font: normal normal normal 1.8vh/2.1vh Arial;
+      letter-spacing: 0;
+      color: #828A99;
+      opacity: 1;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  .rightContainer {
+    width: 50vw;
+    height: 100vh;
+    float: left;
+    position: relative;
+    .loginFormContainer {
+      width: 60%;
+      height: 43.8vh !important;
+      background: rgba(255,255,255,0.5) 0 0 no-repeat padding-box;
+      padding: 3vh;
+      border-radius: 2vh;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      .loginFormTitle {
+        height: 8vh;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          text-align: center;
+          font: normal normal bold 3.7vh/4.5vh Arial;
+          letter-spacing: 0;
+          color: #443D3D;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

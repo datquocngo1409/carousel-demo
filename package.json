@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "components": "^0.1.0",
     "next": "12.1.5",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-responsive-carousel": "^3.2.23",
+    "sass": "^1.51.0"
   },
   "devDependencies": {
     "eslint": "8.14.0",
-    "eslint-config-next": "12.1.5"
+    "eslint-config-next": "12.1.5",
+    "formik": "^2.2.9",
+    "next-auth": "^4.3.4"
   }
 }
